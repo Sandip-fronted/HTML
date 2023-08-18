@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+            display: flex;
+            background-image: url(../Desktop/github/HTML/Image/Download-Dark-Wallpapers-HD.png);
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #272727;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        label{
+            color: white;
+        }
+
+        legend{
+            color:white;
+            
+        }
+        input{
+            position: relative;
+            background: #fff;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 10px 30px;
+            transition: 0.5s;
+            
+
+        }
+        input:hover{
+            background: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+            letter-spacing: 0.25em;
+        }
+        input:before{
+
+content: '';
+position: absolute;
+inset: 2px;
+background: var(--clr);
+}
+        select{
+            position: relative;
+            background: var(--clr);
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+        select:hover{
+            background: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+            letter-spacing: 0.25em;
+        }
+        textarea{
+            position: relative;
+            background: var(--clr);
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            font-weight: 400;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+        textarea:hover{
+            background: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+            letter-spacing: 0.25em;
+        }
+
+            button{
+            position: relative;
+            background: #fff;
+            color:var(--clr);
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            font-weight: 200;
+            padding: 10px 30px;
+            transition: 0.5s;
+            
+
+        }
+        button:hover{
+            background: var(--clr);
+            color: var(--clr);
+            box-shadow: 0 0 35px var(--clr);
+            letter-spacing: 0.25em;
+        }
+        
+   </style>
+</head>
+<body>
+
+<fieldset >
+    <legend>personal profile</legend><br>
+    <form>
+       <label for="firstname">First Name :</label>
+       <span><input type="text" name="firstname" placeholder="enter first name"><i></i></span><br><br>
+       <label for="lastname">Last Name :</label>
+       <span><input type="text" name="lastname" placeholder="enter last name"><i></i></span><br><br>
+       <label for="email">Email :</label>
+       <span><input type="email" name="email" placeholder="enter your email"><i></i></span><br><br>
+       <label for="ph no">Ph No :</label>
+       <span><input type="number" name="ph no" placeholder="+91 00000 00000"><i></i></span><br><br>
+
+       <label for="gender">Gender :</label>
+       <span><input type="radio" name="gender" id="male"><i></i></span>
+        <label for="male">Male</label>
+        <span><input type="radio" name="gender" id="female"><i></i></span>
+         <label for="female">Female</label><br><br>
+         <label for="birthday">Birthday :</label>
+         <span><input type="date" id="birthday" name="birthday" placeholder="MM/DD/YYYY"><i></i></span><br><br>
+        <select>
+            <option value="--SELECT U R DEGREE--" disabled  selected>--SELECT U R DEGREE--</option>
+            <option>BSC IT</option>
+            <option>MSC IT</option>
+            <option>BCA</option>
+            <option>MCA</option>
+        <i></i></select><br><br>
+        <label for="address">Address :</label><br>
+        <span><textarea name="address" cols="20" rows="5" placeholder="enter address"></textarea><i></i></span><br><br>
+        <button>Submit</button>
+      
+
+    </form><br>
+</fieldset>
+    
+</body>
+</html>
